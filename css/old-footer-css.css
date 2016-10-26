@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* OLD FOOTER CSS Document */
+
+footer.container-fluid {
+    background: #e1e4ed;
+    padding-top: 90px;
+    padding-bottom: 150px;
+}
+
+/*logo-address*/
+section#logo-address>div>a {
+    margin-left: 150px;
+}
+
+section#logo-address>div>a>img {
+    padding: 45px 30px;
+    border: 3px solid #989898;
+}	
+section#logo-address>div>a:hover>img {
+    background: #A9A9A9;
+}	
+.col-sm-6>.contact>ul {
+    list-style: none;
+    padding-top: 25px;
+}
+
+/*connect-social*/
+section#connect-social>.col-sm-3>a>i {
+    border: 2px solid #989898;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    color: #989898;
+}
+section#connect-social>.col-sm-3>a:hover {
+    border: none;
+    text-decoration: none;
+    color: transparent;
+}
+section#connect-social>.col-sm-3>a:hover>i {
+	    background: #A9A9A9;
+	
+	}
+
+section#connect-social>.col-sm-3>a>i:hover {
+    border: none;
+    text-decoration: none;
+}
+
+/*stuff for responsive header and mostly footer stuff*/
+@media (min-width: 320px) and (max-width: 767px) {
+	
+	nav#top-navbar>div {
+		margin: 0;
+		padding: 20px 0;
+	}
+	div#menu.navbar-collapse.collapse.in {
+    padding: 0;
+    margin: 0;
+	}
+	div#menu.navbar-collapse.collapse.in>ul {
+    margin: 0;
+	}
+	nav#top-navbar {
+    padding: 0;
+}
+	
+	.navbar-right {
+    float: none !important;
+    text-align: center;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #337ab7;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #E6E6E6;
+}
+.navbar-default .navbar-toggle {
+    border-color: #FFFFFF;
+}
+
+button.navbar-toggle {
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.navbar-brand>img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+}
+
+div#menu.navbar-collapse.collapse.in>ul>li {
+    border-bottom: 1px dotted #f5f5f5;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(245, 245, 245);
+}
+	/*main-view*/
+	.main-view.container-fluid {
+    margin-top: 100px;
+    height: auto;
+    background: #d9edf7;
+    /* background: #e7f0fa; */
+}
+
+/*footer*/
+footer.container-fluid {
+    background: #e1e4ed;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+/*logo-address*/
+
+section#logo-address>div>a>img {
+    padding: 24px 0 0 0;
+    border: none;
+    margin: 0;
+    margin-top: px;
+}
+section#logo-address>div>a:hover>img {
+    background: none;
+}
+
+.col-sm-6>.contact>ul {
+    list-style: none;
+     padding-top:0; /**/
+    padding-left: 0;
+}
+
+section#logo-address>div>a {
+     margin-left: 0;/* */
+	 border: none;
+	 text-decoration:none;
+}
+
+
+/*connect-social*/
+
+#connect-social>.col-xs-12>p {
+    text-align: center;
+}
+
+#connect-social>.col-xs-12>a {
+    display: inline-block;
+    padding-right: 2%;
+}
+
+section#connect-social>.col-sm-3>a:hover>i {
+     background: #A9A9A9;
+
+}
+}
+@media (min-width: 768px) and (max-width: 1196px){
+	section#logo-address>div>a {
+    margin-left: 0;
+}
+	}

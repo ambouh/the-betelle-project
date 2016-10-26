@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*responsive "testimonials" floating div: to keep same height in lg*/
+@media (min-width: 768px) {
+	div.all-in {
+		display: flex;
+		padding-left: 0;
+		position: absolute;
+		top: 540px;
+		color: #fff;
+	}
+	
+	div.all-in>div:nth-child(1) {
+		flex: 8;
+		background: rgba(0, 119, 189, .8);
+		color: #fff;
+		padding: 20px 5px 10px 2em;
+	}
+	
+	div.all-in>div:nth-child(1)>p:nth-child(1) {
+		font-weight: 600;
+	}
+	
+	div.all-in>div:nth-child(2) {
+		flex: 4;
+		min-width: 190px;
+		max-width: 200px;
+		background: rgba(45,75,104,0.94);
+		text-align: center;
+	}
+	
+	div.all-in>div:nth-child(2)>h1 {
+		font-size: 4em;
+		font-weight: 700;
+		margin-top: 0;
+	}
+	
+	div.all-in>div:nth-child(2)>p {
+		padding: 0 10px;
+	}
+}
+
+/*stuff for responsive header*/
+@media (min-width: 320px) and (max-width: 767px) {
+	
+	nav#top-navbar>div {
+		margin: 0;
+		padding: 20px 0;
+	}
+	div#menu.navbar-collapse.collapse.in {
+    padding: 0;
+    margin: 0;
+	}
+	div#menu.navbar-collapse.collapse.in>ul {
+    margin: 0;
+	}
+	nav#top-navbar {
+    padding: 0;
+}
+	
+	.navbar-right {
+    float: none !important;
+    text-align: center;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #337ab7;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #E6E6E6;
+}
+.navbar-default .navbar-toggle {
+    border-color: #FFFFFF;
+}
+
+button.navbar-toggle {
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.navbar-brand>img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+}
+
+div#menu.navbar-collapse.collapse.in>ul>li {
+    border-bottom: 1px dotted #f5f5f5;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(245, 245, 245);
+}
+	/*main-view*/
+	.main-view.container-fluid {
+    margin-top: 100px;
+    height: auto;
+    background: #d9edf7;
+    /* background: #e7f0fa; */
+}
+}
+/*--------------------------*/	
+/*all styles needed for xs to sm*/
+@media (min-width: 320px) and (max-width: 767px) {
+section#testimonials {
+    margin-top: 0;
+    margin-bottom: 0em;
+    color: #fff;
+    top: -30px;
+    position: relative;
+    font-size: .67em;
+}
+div#testimonials-quote {
+    background: rgba(0, 119, 189, 1);
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+div#testimonials-quote>p:first-child {
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+div#testimonials-quote>p {
+    padding: 0;
+}
+/*--2--*/
+div#testimonials-count {
+    background: rgba(45,75,104, 1);
+    vertical-align: middle;
+    margin: 0;
+	height: auto;
+	text-align:left;   
+}
+div#testimonials-count {
+    background: rgba(45,75,104, 1);
+    vertical-align: middle;
+}
+h1.count {
+    font-weight: 700;
+    float: left;
+    margin: 5px 10px 7px 0;
+    font-size: 36px;
+}
+
+#testimonials-count>p {
+    position: relative;
+    padding-top: 15px;
+	font-size: 1em;
+}
+/*footer*/
+section#social>ul {
+	float: none !important;
+	margin-top: 0 !important;
+	margin-bottom: 2.3em;
+	}
+.copyright {
+	font-size: .9em;
+	}
+/*all styles needed for xs to sm: ABOUT PAGE*/
+
+article.all-in {
+    display: block !important;
+}
+section#testimonials.about {
+    font-size: 16px;
+}
+
+div#testimonials-count.about {
+    background: rgba(45,75,104, .94);
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+}
+div#testimonials-count.about {
+    text-align: left;
+    height: auto;
+}
+
+div#testimonials-count.about>h1 {
+    font-weight: 700;
+    float: left;
+    margin: 5px 10px 7px 0;
+    font-size: 36px;
+}
+/*all styles needed for xs to sm: SERVICES PAGE*/
+section#services>h2 {
+    font-weight: 700;
+    color: #0074c8;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+/*all styles needed for xs to sm: CONTACT PAGE*/
+
+	section#contact-info>div:first-child>p {
+    margin-bottom: 0;
+    padding: 20px;
+    padding-left: 0;
+	}
+	
+}
+
+/*makes sure hero-bg fills up screen xs to 500px*/
+@media (min-width: 320px) and (max-width: 500px) {
+	
+	#slideshow>div.default {
+    height: 460px;
+    background-position-y: -1em;
+    background-position-x: -15em;
+}
+}
+
+/*makes sure hero-bg fills up screen 501 to sm*/
+@media (min-width: 501px) and (max-width: 767px) {
+#slideshow>div.default {
+    height: 585px;
+    background-position-y: -50px;
+    background-position-x: -160px;
+}
+section#testimonials {
+    top: 0;
+    margin-top: -4.9em;
+    margin-bottom: 5em;
+    color: #fff;
+}
+	
+	}
+	

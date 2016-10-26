@@ -1,0 +1,202 @@
+<!doctype html>
+<html  ng-app="myApp">
+<head>
+	<!--jQuery-->   
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <script src="js/bootstrap.js"></script>
+    
+    <!--Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    
+    <!-- React -->
+	<script src="js/react.js"></script>
+	<script src="js/react-with-addons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+
+    <!-- Angular Js -->
+    <script src="js/angular.js"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/angular-route.js"></script>
+
+    <!--boxes-->
+    <link type="text/css" href="https://www.designhotels.com/assets/css/dh.css?version=master-7.08.69" media="screen" rel="stylesheet">
+    <link href="https://www.designhotels.com/assets/css/oe/style.css?version=master-7.08.69" rel="stylesheet" type="text/css">
+    
+    <!--Custom Styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+
+    <!--Custom JS-->
+    <script src="js/app.js"></script>
+
+    <!--Media-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    
+    <title>Welcome to Betelle Company| Andres Mbouh Portfolio</title>
+
+
+
+</head>
+
+<body>
+	<section class="container">
+    	<header class="row">
+        <nav class="col-sm-12 navbar navbar-default navbar-static-top" id="top-navbar">
+               <div class="navbar-header">
+                   <a class="navbar-brand" href="#">
+                       <img class="" alt="Betelle - A Custom Software Company" src="images/be-group.png">
+                       <img class="" alt="Betelle - A Custom Software Company" src="images/andres-sign.png">
+                   </a>
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="menu">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="menu">
+                   <ul class="nav navbar-nav navbar-right">
+                       <li><a href="#">Web Projects</a></li>
+                       <li><a href="#">Branding</a></li>
+                       <li><a href="#">Other Arts</a></li>
+    
+                   </ul>
+               </div>
+    
+            <!--1-->
+
+        </nav>  	
+        </header>
+    </section>
+	<!--1-->
+    <section class="container-fluid">
+    
+		<section class="jumbotron row" id="hero-content">
+            <img src="images/portfolio-bg.jpg" alt="Andres Mbouh - Web Developer at Betelle Company">
+        </section>
+        <!--main-->
+        <main class="row">
+            <article class="col-sm-12 padding-off">
+                <h2 class="title">Recent Web Projects</h2>
+                <section class="section-2" ng-controller="projectCtrl">
+                    <!--Stories -->
+                    <ul id="stories">
+                        <li ng-repeat="m in mutants">
+                            <a project-tile actor="m"></a>
+                        </li>
+
+                    </ul>
+                    <!-- END of Stories -->
+                </section>
+            </article>
+            <!--1-->
+
+            <article class="col-sm-12 padding-off">
+                <h2 class="title">Branding</h2>
+                <section class="section-2" ng-controller="projectCtrl">
+                    <!--Stories -->
+                    <ul id="stories">
+                        <li ng-repeat="m in mutants">
+                            <a project-tile actor="m"></a>
+                        </li>
+
+                    </ul>
+                    <!-- END of Stories -->
+                </section>
+            </article>
+            <!--2-->
+            
+            <article class="col-sm-12 padding-off">
+                <h2 class="title">Other Conemporary Arts</h2>
+                <section class="section-2" ng-controller="projectCtrl">
+                    <!--Stories -->
+                    <ul id="stories">
+                        <li ng-repeat="m in mutants">
+                            <a project-tile actor="m"></a>
+                        </li>
+
+                    </ul>
+                    <!-- END of Stories -->
+                </section>
+            </article>
+            <!--3-->
+            
+			<article class="col-md-offset-3 col-md-6">
+                <section class="col-sm-12 interested">
+                    <h2>Let's Build Great Products...</h2>
+                    <section class="col-sm-12">
+
+                        <div class="input-group interested">
+                            <input type="text" class="form-control" placeholder="your email..." style="
+    height: 50px;
+">
+                            <span class="input-group-btn" style="
+">
+                                <button class="btn btn-default interested" type="button" >Go!</button>
+                            </span>
+                        </div><!-- /input-group -->
+                        <textarea class="form-control interested" rows="4" placeholder="State a concern or inquire about our services..."></textarea>
+                    </section>
+                </section>
+            </article>
+        </main>
+        <!--start of footer-->
+        <footer>
+            <div class="row betelle-footer">
+                <section class="col-sm-8" id="">
+                    <ul>
+                        <li class="cat">SITEMAP</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <br>
+                        <li class="cat">Contact info</li>
+                        <li><a href="#">PO BOX 660 Hyattsville Md</a></li>
+                        <li><a href="#">(301) 559 4950</a></li>
+                        <br>
+                        <li class="cat">Email</li>
+                        <li><a href="#">ask-us@betelle.us</a></li>
+    
+                        <br>
+                    </ul>
+    
+                </section>
+                <section class="col-xs-12 col-sm-4" id="social">
+                    <ul class="pull-right">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+    
+                </section>
+                <section class="col-xs-12" id="">
+                    <div class="copyright">
+                        <span>Copyright</span> &copy; 2016 Betell&eacute; - A Custom Software Company
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <!--end of footer-->
+</section>
+</body>
+</html>
